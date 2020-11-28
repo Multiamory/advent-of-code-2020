@@ -35,4 +35,9 @@ def main():
 
 
 if __name__ == "__main__":
+    input(
+        "This file only needs to be run if the current year does not yet have folders set up.\n"
+        "Beware, this may overwrite your files if you have already done work.\n\n"
+        "Press Enter to continue or CTRL + C to cancel."
+    )
     main()
