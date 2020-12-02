@@ -75,6 +75,7 @@ def ask_user_for_session_id():
         "Copy the value, paste it here and press enter."
     )
     session_id = input("> ").strip()
+    return session_id
 
 
 def get_day_url(file_path):
