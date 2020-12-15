@@ -10,4 +10,21 @@ import get_input
 input_string = get_input.get_input_for_day(__file__)
 # __________________ End of setup ____________________
 
+import day12
 
+if __name__ == "__main__":
+    input_lines = input_string.splitlines()
+    #     input_lines = """F10
+    # N3
+    # F7
+    # R90
+    # F11""".splitlines()
+
+    pos = (0, 0)
+    heading = 0
+
+    for line in input_lines:
+        pos, heading = day12.doOperation(pos, heading, line)
+
+    print(pos)
+    print(abs(pos[0]) + abs(pos[1]))
